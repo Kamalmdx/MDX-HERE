@@ -37,14 +37,7 @@
   </a>
 </div>
 
-### Step 2: Generate Session
-<div align="center">
-  <a href="https://spark-pair.onrender.com/pair" target="_blank">
-    <img src="https://img.shields.io/badge/Generate-Session_ID-success?style=for-the-badge" alt="Generate Session"/>
-  </a>
-</div>
-
-### Step 3: Deploy Bot
+### Step 2: Deploy Bot
 <div align="center">
   <a href="https://dashboard.katabump.com/auth/login#d6b7d6" target="_blank">
     <img src="https://img.shields.io/badge/Deploy-Katabump-D6B7D6?style=for-the-badge&logo=server&logoColor=black" alt="Deploy on Katabump"/>
