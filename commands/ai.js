@@ -40,7 +40,7 @@ async function aiCommand(sock, chatId, message) {
             modelName = 'Gemini';
         } else {
             await sock.sendMessage(chatId, { 
-                text: '🤖 *𝙕𝙖𝙣𝙞𝙩𝙨𝙪 𝙗𝙤𝙩AI*\n\n❌ Invalid command.\n\nAvailable commands:\n• .gpt - ChatGPT 4.5\n• .deepseek - DeepSeek AI\n• .gemini - Google Gemini\n\n> ρσωєяє∂ ву αмσи'
+                text: '🤖 *𝙕𝙖𝙣𝙞𝙩𝙨𝙪 𝙗𝙤𝙩AI*\n\n❌ Invalid command.\n\nAvailable commands:\n• .gpt - ChatGPT 4.5\n• .deepseek - DeepSeek AI\n• .gemini - Google Gemini\n\n> ρσωєяє∂ ву chrisGaaju'
             }, { quoted: message });
             return;
         }
@@ -55,8 +55,8 @@ async function aiCommand(sock, chatId, message) {
             const formattedResponse = `🤖 *𝙕𝙖𝙣𝙞𝙩𝙨𝙪 𝙗𝙤𝙩${modelName.toUpperCase()}*\n\n` +
                                     `📝 *Question:* ${query}\n\n` +
                                     `💡 *Answer:*\n${answer}\n\n` +
-                                    `⭐ *Powered by Benzo-MD*\n` +
-                                    `> ρσωєяє∂ ву αмσи`;
+                                    `⭐ *Powered by Zenitsu-BOT*\n` +
+                                    `> ρσωєяє∂ ву chrisGaaju`;
             
             await sock.sendMessage(chatId, { text: formattedResponse }, { quoted: message });
             
@@ -72,7 +72,7 @@ async function aiCommand(sock, chatId, message) {
         console.error('[𝙕𝙖𝙣𝙞𝙩𝙨𝙪 𝙗𝙤𝙩AI] Error:', error.message);
         
         await sock.sendMessage(chatId, { 
-            text: `🤖 *𝙕𝙖𝙣𝙞𝙩𝙨𝙪 𝙗𝙤𝙩AI*\n\n❌ ${error.message || 'AI service failed'}\n\n💡 Please try again later.\n\n> ρσωєяє∂ ву CHRIS`
+            text: `🤖 *𝙕𝙖𝙣𝙞𝙩𝙨𝙪 𝙗𝙤𝙩AI*\n\n❌ ${error.message || 'AI service failed'}\n\n💡 Please try again later.\n\n> ρσωєяє∂ ву chrisGaaju`
         }, { quoted: message });
         
         await sock.sendMessage(chatId, {
